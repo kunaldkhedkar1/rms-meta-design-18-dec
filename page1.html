@@ -88,7 +88,7 @@
                 </div>
                 <div class="cardContainer">
                     <div class="row">
-                        <div class="col-md-6 mt-5">
+                        <div class="col-md-6 mt-5 mt-lg-0 mt-sm-5 mt-md-0">
                             <div class="cardWrapper">
                                 <div class="card">
                                     <div class="cardNumber">1</div>
@@ -141,7 +141,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-5">
+                        <div class="col-md-6 mt-5 mt-lg-0 mt-sm-5 mt-md-0">
                             <div class="cardWrapper">
                                 <div class="card">
                                     <div class="cardNumber">2</div>
@@ -168,8 +168,8 @@
                                             <div class="inputWrapper radioButtonsWrapper">
                                                 <label class="inputMainLabel" class="d-block radioMainLabel">Amount
                                                     Requirment (5000 - 100000) </label>
-                                                <div class="radioButtons">
-                                                    <input type="renge" id="yes" class="">
+                                                <div class="radioButtons w-100">
+                                                    <input type="range" id="vol" name="vol" min="5000" max="100000">
                                                 </div>
                                             </div>
                                         </form>
@@ -211,14 +211,19 @@
                                                     <button type="button" class="btn dropdown-toggle text-left"
                                                         data-toggle="dropdown">Choose an option</button>
                                                     <ul class="dropdown-menu">
-                                                        <li class="dropdown-item" href="#" selected disabled>choose an
-                                                            option</li>
-                                                        <li class="dropdown-item" href="#">Link 2</li>
-                                                        <li class="dropdown-item" href="#">Link 3</li>
+                                                        <li class="dropdown-item" selected disabled>choose an option
+                                                        </li>
+                                                        <li class="dropdown-item">1 month or less</li>
+                                                        <li class="dropdown-item">3 month or less</li>
+                                                        <li class="dropdown-item">6 month or less</li>
+                                                        <li class="dropdown-item">1 year or less</li>
+                                                        <li class="dropdown-item">2 year or less</li>
+                                                        <li class="dropdown-item">1 year or less</li>
+                                                    </ul>
                                                 </div>
                                             </div>
+                                        </form>
                                     </div>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -239,10 +244,10 @@
                                                     <button type="button" class="btn dropdown-toggle text-left"
                                                         data-toggle="dropdown">Choose an option</button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#" selected disabled>choose an
+                                                        <a class="dropdown-item" selected disabled>choose an
                                                             option</a>
-                                                        <a class="dropdown-item" href="#">Link 2</a>
-                                                        <a class="dropdown-item" href="#">Link 3</a>
+                                                        <a class="dropdown-item">Link 2</a>
+                                                        <a class="dropdown-item">Link 3</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,10 +258,10 @@
                                                     <button type="button" class="btn dropdown-toggle text-left"
                                                         data-toggle="dropdown">Choose an option</button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#" selected disabled>choose an
+                                                        <a class="dropdown-item" selected disabled>choose an
                                                             option</a>
-                                                        <a class="dropdown-item" href="#">Link 2</a>
-                                                        <a class="dropdown-item" href="#">Link 3</a>
+                                                        <a class="dropdown-item">Link 2</a>
+                                                        <a class="dropdown-item">Link 3</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -273,9 +278,6 @@
     </main>
     <footer class="bg-dark">
         © Electronic Payments, Inc. All Rights Reserved
-        <a href="#" class="chat">
-            <img src="images/chat.png">
-        </a>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
