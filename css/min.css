@@ -686,24 +686,26 @@ footer.bg-dark {
   position: relative;
   border-radius: 20px;
   box-shadow: 1px 1px 10px #ccc;
+  height: 100%;
 }
 .cardContainer .card .cardNumber {
   position: absolute;
-  border-radius: 50%;
   background: #0088ce;
   color: #fff;
-  width: 50px;
-  height: 50px;
-  top: -20px;
+  top: -25pt;
   text-align: center;
   left: 30px;
-  padding: 10px;
+  padding: 15px 10px 0;
   font-family: "Quicksand";
   font-weight: bold;
   font-size: 20px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  height: 25pt;
+    width: 50pt;
+    border-top-left-radius: 50pt;
+    border-top-right-radius: 50pt;
 }
 .card-header {
   background: #0088ce;
@@ -717,6 +719,7 @@ footer.bg-dark {
 .cardBody {
   padding: 30px 20px;
   background: #f6f6f6;
+  height: 100%;
 }
 .inputWrapper {
   display:flex;
@@ -724,14 +727,15 @@ footer.bg-dark {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 70%
+  width: 70%;
+  margin: 10px 0;
 }
 .radioButtonsWrapper{
   flex-direction: column;
   align-items: flex-start;
 }
 .radioButtonsWrapper .inputMainLabel{
-  font-size: 18pt;
+  font-size: 16px;
   color: #3a3a3a;
   font-family: "Quicksand";
   margin: 10px 0;
@@ -758,13 +762,95 @@ footer.bg-dark {
   display: inline-block;
   margin-left: .255em;
   vertical-align: .255em;
-  
   content: "";
-  border-top: .3em solid #ccc;
-  border-right: .3em solid transparent;
-  border-bottom: 0;
-  border-left: .3em solid transparent;
+  border-style: solid;
+  border-width: .3em .3em  0;
+  border-color: #ccc transparent;
 }
+.radioButtons input[type=radio]{
+    margin: 0 20px 0 0;
+  }
+  .radioButtonsn label{
+    margin: 0 30px 0 0;
+  }
 @media only screen and (min-width: 768px){
 
+}
+@media only screen and (max-width: 500px) {
+  .cardContainer {
+    padding: 32px 12px 0 12px;
+}
+.cardContainer .card .cardNumber {
+  top: -29px;
+  height: 25pt;
+  width: 50pt;
+  border-top-left-radius: 50pt;
+  border-top-right-radius: 50pt;
+}
+.card .card-header {
+  font-size: 16pt;
+}
+.inputWrapper{
+  width: 100%;
+}
+.radioButtons input[type=radio]{
+  margin: 0 10px 0 0;
+}
+.radioButtonsn label{
+  margin: 0 15px 0 0;
+}
+}
+
+.text-input-wrapper {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
+}
+
+.text-input-wrapper input{
+  font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.text-input-wrapper input::after{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    border-bottom: 2px solid #1976d2;
+    pointer-events: none;
+}
+
+.text-input-wrapper input{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+.text-input-wrapper input:focus{
+  outline: none;
+}
+.cardWrapper
+{
+  margin: 16px 9px;
+  height: 100%;
 }
